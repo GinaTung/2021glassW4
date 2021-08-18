@@ -1,0 +1,109 @@
+.menu-top{
+    background: #650300 ;
+    padding: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-top ul{
+    display: flex;
+    margin-left: 405px;
+  }
+  .menu-top ul li{
+    margin: 12px 48px 12px 0;
+  }
+  .menu-top ul li a{
+    font-size: 20px;
+    color: white;
+    font-family:  'Noto Sans TC';
+    text-decoration: none;
+  }
+  .menu-top img{
+    margin-right: 405px;
+  }
+  .blog{
+    margin:96px auto 0 auto;
+  }
+  .blog h1{
+    font-size: 48px;
+    margin:40px 0 60px 0;
+    padding-left: 16px;
+    font-family: 'Noto Sans TC';
+    font-weight: bold;
+    border-left: 8px solid #650300;
+  }
+  .blog ul li{
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-around;
+  }
+  .blog ul li img{
+    width: 635px;
+    height: 400px;
+  }
+  .active-first{
+    margin-left: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .active-first ul li{
+    display: flex;
+    flex-direction: column;
+  }
+  .active-first ul li h2{
+    font-size: 32px;
+    color:#650300 ;
+    font-weight: bold;
+    font-family: 'Noto Sans TC';
+    margin-bottom: 2px;
+  }
+  .active-first ul li span{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .active-first ul li span h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+  }
+  .active-first ul li p{
+    font-size: 20px;
+    color: #555555;
+    line-height: 30px;
+    width:445px;
+    font-family: 'Noto Sans TC';
+  }
+  .active-first ul li h4{
+    font-size: 36px;
+    color:#650300 ;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Roboto';
+  }
+  .blog-page{
+    margin-bottom: 160px;
+    margin-top: 96px;
+  }
+  .blog-page ul{
+    display: flex;
+    justify-content: center;
+  }
+  .blog-page ul li a{
+    display: block;
+    border: 1px solid #555555;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #555555;
+  }
+  .page-p{
+    padding: 11px 12px;
+    display: block;
+    border: 1px solid #000;
+  }
+  .blog-page ul li a:hover{
+    color: white;
+    background: #000;
+  }
+  

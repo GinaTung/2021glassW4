@@ -1,0 +1,76 @@
+.footer{
+    padding: 40px 405px;
+    background: #AA0601;
+    color: white;
+    margin-top: 160px;
+  }
+  .footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 36px;
+  }
+  .footer-icon{
+    margin: 0 16px;
+  }
+  .footer-menu ul{
+    display: flex;
+    align-items: center;
+  }
+  .footer-menu ul li{
+    margin-right: 48px;
+  }
+  .footer-menu ul li a{
+  font-size: 16px;
+  font-family: 'Noto Sans TC';
+  text-decoration: none;
+    color: white;
+  }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-content p{
+  font-size: 32px;
+  font-family: 'Roboto';
+  }
+  .content-first{
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .content-second{
+    display: flex;
+    margin-bottom: 24px;
+  }
+  .content-first img{
+    margin-right: 22px;
+  }
+  .content-second img{
+    margin-right: 20px;
+  }
+  .content-second a{
+    font-size: 32px;
+    font-family: Roboto;
+    text-decoration: none;
+    color: white;
+  }
+  .footer-bottom ul{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-bottom ul li{
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .footer-bottom ul li a{
+    font-size: 14px;
+    font-family: 思源黑體 TW;
+    text-decoration: none;
+    color: white;
+    margin-left:48px;
+  }
+  .box6{
+    display: none;
+  }
+  

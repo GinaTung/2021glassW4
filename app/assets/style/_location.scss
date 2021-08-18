@@ -1,0 +1,66 @@
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  
+  .container h1{
+    border-left: 8px solid #9F1213;
+    margin-bottom: 65px;
+    margin-top: 96px;
+  }
+  .container form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+  }
+  .container form select{
+    margin-left: 39px;
+    width: 324px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .locate-list{
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .locate-list li{
+    width: 350px;
+    
+  }
+  .locate-list li img{
+    width: 350px;
+    height: 224px;
+  }
+  .locate-list li h2{
+    padding: 12px 0 12px 24px;
+    border:1px solid #00000020;
+  }
+  .locate-item{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #00000020;
+    padding:16px 0 16px 24px;
+  }
+  .locate-item li{
+    display: flex; 
+    margin-bottom: 8px;
+  }
+  .locate-item li img{
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+  }
+  .box{
+    height: 67px;
+  }
+  .box a{
+    display: block;
+    text-align: center;
+    background: #000;
+    padding: 20px 0;
+    text-decoration: none;
+    color: white;
+  }

@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #9F1213;
+    
+  }
+  .header img{
+    padding:30px 88px;
+  }
+  
+  .header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header ul li{
+    margin: 0 32px;
+  }
+  .header ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  

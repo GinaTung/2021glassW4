@@ -1,23 +1,28 @@
-$color: #00cc99;
+@import "_resect.scss";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
+body{
+  font-family: 'Noto Sans TC';
 }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 24px;
+}
+p{
+  font-size: 20px;
+}
+a{
+  font-size: 19px;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
+.wrap{
+  margin:0 auto;
 }
+
+@import "_header.scss";
+@import "_location.scss";
+@import "_blog.scss";
+@import "_footer.scss";
+
