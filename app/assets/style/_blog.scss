@@ -76,6 +76,17 @@
         width:445px;
         font-family: 'Noto Sans TC';
       }
+      .ipadtext{
+        font-size: 20px;
+        color: #555555;
+        line-height: 30px;
+        width:445px;
+        font-family: 'Noto Sans TC';
+        a{
+          text-decoration: none;
+          color: #000;
+        }
+      }
       h4{
         font-size: 36px;
         color:#650300 ;
@@ -93,17 +104,31 @@
     ul{
       display: flex;
       justify-content: center;
-      li a{
-        display: block;
-        border: 1px solid #555555;
-        padding: 12px 16px;
-        text-decoration: none;
-        color: #555555;
-        a:hover{
-          color: white;
-          background: #000;
+      li{
+        a{
+          display: block;
+          border: 1px solid #555555;
+          padding: 12px 16px;
+          text-decoration: none;
+          color: #555555;
+          &:hover{
+            color: white;
+            background: #000;
+          }
         }
-      }
+        li a{
+          display: block;
+          border: 1px solid #555555;
+          padding: 12px 16px;
+          text-decoration: none;
+          color: #555555;
+          &:hover{
+            color: white;
+            background: #000;
+          }
+        }
+      } 
+      
     }
   }
 
@@ -137,26 +162,28 @@
     
     .active-first{
       height: 0;
-      margin: 3px auto;
+      margin: 0 auto;
       ul li{
         h2{
           font-size: 20px;
         }
         span{
           font-size: 16px;
+ 
           h3{
             font-size: 14px;
           }
         }
         p{
+          display: none;
+          
+        }
+        .ipadtext{
+          display: block;
           font-size: 14px;
           width:322px;
           line-height: 21px;
-          a{
-            display: block;
-          }
         }
-        
         h4{
           display: none;
         }
@@ -200,7 +227,9 @@
         p{
           display: none;
         }
-        
+        .ipadtext{
+          display: none;
+        }
         h4{
           display: none;
         }
@@ -212,29 +241,22 @@
       margin:0;
       ul{
         justify-content: center;
+        li {
+          a{
+          padding: 6px;
+        }
         li a{
           padding: 6px;
         }
       }
-    }
-  }
-  @media(min-width: 768px){
-    .active-first{
-      
-      ul li p a{
-        display: none;
       }
+    }
+  }
 
-  }
-}
-@media(max-width: 1440px){
-  .menu-top{
-    img{
-      margin:0 auto;
-    }
-    ul{
-     
-      margin:0 auto;
+  @media(min-width:768px){
+    .active-first{
+    .ipadtext{
+      display: none;
     }
   }
-}
+  } 
