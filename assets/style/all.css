@@ -299,6 +299,15 @@ a {
       line-height: 30px;
       width: 445px;
       font-family: 'Noto Sans TC'; }
+    .active-first ul li .ipadtext {
+      font-size: 20px;
+      color: #555555;
+      line-height: 30px;
+      width: 445px;
+      font-family: 'Noto Sans TC'; }
+      .active-first ul li .ipadtext a {
+        text-decoration: none;
+        color: #000; }
     .active-first ul li h4 {
       font-size: 36px;
       color: #650300;
@@ -322,7 +331,16 @@ a {
       padding: 12px 16px;
       text-decoration: none;
       color: #555555; }
-      .blog-page ul li a a:hover {
+      .blog-page ul li a:hover {
+        color: white;
+        background: #000; }
+    .blog-page ul li li a {
+      display: block;
+      border: 1px solid #555555;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #555555; }
+      .blog-page ul li li a:hover {
         color: white;
         background: #000; }
 
@@ -343,7 +361,7 @@ a {
       height: 208px; }
   .active-first {
     height: 0;
-    margin: 3px auto; }
+    margin: 0 auto; }
     .active-first ul li h2 {
       font-size: 20px; }
     .active-first ul li span {
@@ -351,11 +369,12 @@ a {
       .active-first ul li span h3 {
         font-size: 14px; }
     .active-first ul li p {
+      display: none; }
+    .active-first ul li .ipadtext {
+      display: block;
       font-size: 14px;
       width: 322px;
       line-height: 21px; }
-      .active-first ul li p a {
-        display: block; }
     .active-first ul li h4 {
       display: none; } }
 
@@ -381,6 +400,8 @@ a {
         font-size: 14px; }
     .active-first ul li p {
       display: none; }
+    .active-first ul li .ipadtext {
+      display: none; }
     .active-first ul li h4 {
       display: none; }
   .blog-page {
@@ -390,17 +411,13 @@ a {
           -ms-flex-pack: center;
               justify-content: center; }
       .blog-page ul li a {
+        padding: 6px; }
+      .blog-page ul li li a {
         padding: 6px; } }
 
 @media (min-width: 768px) {
-  .active-first ul li p a {
+  .active-first .ipadtext {
     display: none; } }
-
-@media (max-width: 1440px) {
-  .menu-top img {
-    margin: 0 auto; }
-  .menu-top ul {
-    margin: 0 auto; } }
 
 .footer {
   padding: 40px 405px;
