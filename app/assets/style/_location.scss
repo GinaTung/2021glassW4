@@ -1,66 +1,98 @@
 .container{
     max-width: 1110px;
     margin: 0 auto;
+    h1{
+      border-left: 8px solid #9F1213;
+      margin-bottom: 65px;
+      margin-top: 96px;
+    }
+    form{
+      display: flex;
+      align-items: center;
+      margin-bottom: 37px;
+      select{
+        margin-left: 39px;
+        width: 324px;
+        height: 45px;
+        font-size: 18px;
+      }
+    }
   }
   
-  .container h1{
-    border-left: 8px solid #9F1213;
-    margin-bottom: 65px;
-    margin-top: 96px;
-  }
-  .container form{
-    display: flex;
-    align-items: center;
-    margin-bottom: 37px;
-  }
-  .container form select{
-    margin-left: 39px;
-    width: 324px;
-    height: 45px;
-    font-size: 18px;
-  }
   
   .locate-list{
     display: flex;   
     flex-wrap: wrap;
     justify-content: space-between;
+    li{
+      width: 350px;
+      img{
+        width: 350px;
+        height: 224px;
+      }
+      h2{
+        padding: 12px 0 12px 24px;
+        border:1px solid #00000020;
+      }
+    }
   }
-  .locate-list li{
-    width: 350px;
-    
-  }
-  .locate-list li img{
-    width: 350px;
-    height: 224px;
-  }
-  .locate-list li h2{
-    padding: 12px 0 12px 24px;
-    border:1px solid #00000020;
-  }
+
   .locate-item{
     display: flex;
     flex-direction: column;
     border:1px solid #00000020;
     padding:16px 0 16px 24px;
+    li{
+      display: flex; 
+      margin-bottom: 8px;
+      img{
+        display: block;
+        width: 18px;
+        height: 18px;
+        padding-right: 10px;
+      }
+    }
+
   }
-  .locate-item li{
-    display: flex; 
-    margin-bottom: 8px;
-  }
-  .locate-item li img{
-    display: block;
-    width: 18px;
-    height: 18px;
-    padding-right: 10px;
-  }
+
   .box{
     height: 67px;
+    a{
+      display: block;
+      text-align: center;
+      background: #000;
+      padding: 20px 0;
+      text-decoration: none;
+      color: white;
+    }
   }
-  .box a{
-    display: block;
-    text-align: center;
-    background: #000;
-    padding: 20px 0;
-    text-decoration: none;
-    color: white;
+  @media (max-width: 768px) {
+
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media(max-width: 376px){
+    .container {
+      max-width: auto;
+      margin: 0 10px;
+      h1{
+        font-size: 28px;
+      }
+      form{
+        justify-content: center;
+        h2{
+          font-size: 14px;
+        }
+        select{
+          font-size: 14px;
+
+        }
+      }
+      .locate-list{
+        justify-content: center;
+      }
+
+
+    }
   }
