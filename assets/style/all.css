@@ -61,9 +61,6 @@ p {
 a {
   font-size: 19px; }
 
-.wrap {
-  margin: 0 auto; }
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +70,8 @@ a {
           justify-content: space-between;
   background: #9F1213; }
   .header img {
-    padding: 30px 88px; }
+    padding: 30px 88px;
+    display: block; }
   .header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157,7 +155,8 @@ a {
     width: 350px; }
     .locate-list li img {
       width: 350px;
-      height: 224px; }
+      height: 224px;
+      display: block; }
     .locate-list li h2 {
       padding: 12px 0 12px 24px;
       border: 1px solid #00000020; }
@@ -482,7 +481,8 @@ a {
   display: flex;
   margin-bottom: 24px; }
   .content-second img {
-    margin-right: 20px; }
+    margin-right: 20px;
+    display: block; }
   .content-second a {
     font-size: 32px;
     font-family: Roboto;
