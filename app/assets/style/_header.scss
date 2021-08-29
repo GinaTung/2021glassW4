@@ -1,60 +1,118 @@
 .header{
+  background: #9F1213;
+  padding:0 15px;
+  .container{
     display: flex;
     justify-content: space-between;
-    background: #9F1213;
-    img{
-      padding:30px 88px;
-      display: block;
-    }
-    ul{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    align-items: center;
+    .header-logo{
       li{
-        margin: 0 32px;
+        img{
+          padding:30px 0px;
+          display: block;
+        }
+      }
+    }
+    
+    .header-nav{
+      display: flex;
+      li{
+        margin-left: 32px;
         a{
           text-decoration: none;
           color: white;
+          font-size: 20px;
+          text-align: center;
+          display: block;
         }
       }
     }
   }
-  @media(max-width: 768px){
-    .header{
-      img{
-        padding: 30px 0 30px 39px;
-      }
-
-    }
+    
   }
-  @media(max-width: 376px){
-    .header{
-      align-items: center;
-      padding:0;
+  
+//平板
+@media (max-width: 768px) {
+  .container{
+    max-width: 720px; 
+  }
+}
+//手機
+@media (max-width: 375px) {
+  .header{
+    padding:0 0px;
+    .container{
+      max-width: 375px; 
+      display: flex;
       flex-direction: column;
-      img{
-        margin: 10px 0;
-        padding: 0;
-      }
-      ul{
+
+      
+      .header-nav{
         flex-wrap: wrap;
+        margin: 0 0;
         li{
-          border:1px solid white;
-          margin: 0 0;
-          flex-wrap: wrap;
-          a{
+          border: 1px solid #FFFFFF;
+          width:50%;
+          height: 100%;
+          padding:8px 10px;
+          display: flex;
+          margin-left: 0;
+          justify-content: space-around;
+        }
+      }
+      .header-logo{
+        margin-left: 0;
+        li{
+          img{
+            padding: 5px 0px;
             display: block;
-            text-align: center;
-            margin:8px 54.8px;
           }
         }
+      }
+      
     }
-    }
-   
-   
-    
-
   }
+  
+
+}
+@media(min-width: 375px) and (max-width: 376px){
+  .header{
+    padding:0 0px;
+    .container{
+      max-width: 375px; 
+      display: flex;
+      flex-direction: column;
+
+      
+      .header-nav{
+        flex-wrap: wrap;
+        margin: 0 0;
+        li{
+          border: 1px solid #FFFFFF;
+          width:50%;
+          padding:8px 10px;
+          display: flex;
+          margin-left: 0;
+          justify-content: space-around;
+        }
+      }
+      .header-logo{
+        margin-left: 0;
+        li{
+          img{
+            padding: 5px 0px;
+            display: block;
+          }
+        }
+      }
+      
+    }
+  }
+  
+
+
+}
+
 
   
   

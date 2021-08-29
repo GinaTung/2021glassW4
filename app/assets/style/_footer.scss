@@ -1,177 +1,229 @@
 .footer{
-    padding: 40px 405px;
-    background: #AA0601;
-    color: white;
-    margin-top: 160px;
-  }
+  background: #AA0601;
+  color: white;
+  
+.container{
+  max-width:1140px;
+  margin: 0 auto;
+  padding: 32px 15px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 36px;
   .footer-menu{
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-bottom: 36px;
-    ul{
-      display: flex;
-      align-items: center;
-      li{
-        margin-right: 48px;
-        a{
-          font-size: 16px;
-          font-family: 'Noto Sans TC';
-          text-decoration: none;
-            color: white;
-          }
-      }
+    align-items: center;
+    li{
+      margin-right: 48px;
+      a{
+        font-size: 16px;
+        font-family: 'Noto Sans TC';
+        text-decoration: none;
+          color: white;
+        }
     }
   }
   .footer-icon{
-    margin: 0 16px;
+    display: flex;
+    li{
+       margin-left:32px;
+    }
   }
  
-  .footer-content{
-    display: flex;
-    flex-direction: column;
-    p{
-      font-size: 32px;
-      font-family: 'Roboto';
-      }
-  }
 
-  .content-first{
-    display: flex;
-    margin-bottom: 16px;
-    img{
-      margin-right: 22px;
-    }
-  }
-  .content-second{
-    display: flex;
-    margin-bottom: 24px;
-    img{
-      margin-right: 20px;
-      display: block;
-      
-    }
-    a{
-      font-size: 32px;
-      font-family: Roboto;
-      text-decoration: none;
-      color: white;
-    }
-  }
+}
 
-  .footer-bottom ul{
-    margin-top: 32px;
-    display: flex;
-    justify-content: space-between;
+.footer-datas{
+  .content-data{
     li{
-      font-size: 16px;
-      font-family: Roboto;
-      a{
-        font-size: 14px;
-        font-family: 思源黑體 TW;
+       display: flex;
+       margin-bottom: 16px;
+      p,a{
+        font-size: 36px;
+        font-family: Roboto;
         text-decoration: none;
         color: white;
-        margin-left:48px;
+        margin-left: 22px;
       }
     }
+   
   }
 
-  .box6{
-    display: none;
-  }
-  
+}
 
-  @media(max-width: 768px){
-    .footer{
-      align-items: center;
-          padding: 32px 39px;
+
+
+.footer-bottom ul{
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  li{
+    font-size: 16px;
+    font-family: Roboto;
+    a{
+      font-size: 14px;
+      font-family: 思源黑體 TW;
+      text-decoration: none;
+      color: white;
+      margin-left:48px;
     }
-      .footer-icon img{
-          width: 24px;
-          height: 24px;
-      }
-      .footer-content p{
-          font-size: 24px;
-      }
-      .content-first img{
-          width: 18px;
-          height: 18px;
-      }
-      .content-second img{
-          width: 20px;
-          height: 16px;
-      }
-      .content-second a,.content-first p{
-          font-size: 20px;
-      }
-      .footer-icon2{
-          display: none;
-      }
-  
   }
+}
+}
 
-  @media(max-width: 376px){
-    .footer{
-      align-items: center;
-          padding: 26px 15px 24px 15px;
-    }
+// 平板
+@media (max-width: 768px) {
+  .footer{
+    .footer-content{
       .footer-menu{
-          display: none;
-          margin-bottom: 0;
+        li{
+          margin-right: 40px;
+        }
       }
-      .footer-content{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-      }
-  
-      .content-second{
-          margin-bottom:14px ;
+      .footer-icon{
+        li{
+          margin-left: 24px;
           img{
-            width: 16px;
-            height: 14px;
-            margin-right: 5px;
+            width: 24px;
+            height: 24px;
+          }
         }
-        p{
-          font-size: 16px;
+      } 
+    }
+    .footer-datas{
+      .content-data{
+        li{
+          p,a{
+            font-size: 20px;
+          }
+          img{
+            height: 18px;
+            width: 18px;
+          }
         }
+       
       }
-      .content-first {
-        img{
-          width: 15px;
-          height: 15px;
-          margin-right: 5px;
-      }
-        p{
-          font-size: 16px;
-        }
-        
-      }
-      
-      
-      .footer-menu ul{
+    }
+    
+  }
+.container{
+  max-width: 720px; 
+  padding: 0 0;
+  
+  }
+}
+@media (max-width: 767px) {
+  .container{
+    max-width: 767px; 
+    }
+  
+    .footer{
+     
+      .footer-content{
+        .footer-menu li{
           display: none;
+       }
+       .footer-icon li{
+          display: none;
+       }
       }
-      .footer-bottom ul {
+      .footer-bottom{
+        margin-top: 16px;
+        ul{
           flex-direction: column;
-         margin-top: 16px;
-         li{
-          display: flex;
-          flex-direction: column;
-          a{
-            margin: 8px 0 0 0;
+          li{
+            display: flex;
+            flex-direction: column;
+            a{
+              margin-left: 0;
+              margin-top: 8px;
+            }
           }
         }
       }
-  
-      .footer-icon2{
-          display: block;
-          img{
-          width: 24px;
-          height: 24px;
-          margin-left:24px;
-      }
-      }
+    }
+    
+}
 
+//手機
+@media (max-width: 375px) {
+.container{
+  max-width: 375px; 
   }
+
+  .footer{
+    .footer-content{
+      .footer-menu li{
+        display: none;
+     }
+     .footer-icon li{
+        display: none;
+     }
+    }
+    
+    .footer-datas{
+      .content-data{
+        li{
+          p,a{
+            font-size: 20px;
+          }
+          img{
+            height: 18px;
+            width: 18px;
+          }
+        }
+       
+      }
+      .footer-icon-second{
+        display: flex;
+        li{
+          img{
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 375px) {
+
+  .footer-datas{
+    display: flex;
+    justify-content: space-between;
+    .content-data li{
+
+      a{
+        font-size: 16px;
+        margin-left:6.5px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-icon-second{
+    display: flex;
+    li{
+      img{
+        height: 20px;
+        width: 20px;
+        margin-left: 12px;
+      }
+    }
+  }
+  hr{
+    margin: 0 ;
+  }
+}
+
+
+@media (min-width: 767px) {
+  .footer-icon-second{
+    display: none;
+  }
+
+}

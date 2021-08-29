@@ -1,24 +1,23 @@
 .menu-top{
     background: #650300 ;
-    padding: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    img{
-      margin-right: 405px;
-    }
-    ul{
+    .nav{
       display: flex;
-      margin-left: 405px;
-      li{
-        margin: 12px 48px 12px 0;
-        a{
-          font-size: 20px;
-          color: white;
-          font-family:  'Noto Sans TC';
-          text-decoration: none;
+      justify-content: space-between;
+      padding: 0 auto;
+      ul{
+        display: flex;
+        li{
+          margin: 12px 48px 12px 0;
+          a{
+            font-size: 20px;
+            color: white;
+            font-family:  'Noto Sans TC';
+            text-decoration: none;
+          }
         }
       }
     }
+    
 
   }
  
@@ -139,17 +138,12 @@
   }
 
   @media (max-width: 768px) {
-    .menu-top{
-      img{
-        margin:0 auto;
-      }
-      ul{
-       
-        margin:0 auto;
-      }
-    }
-
+ 
     .blog{
+      h1{
+        margin:28px 0;
+      }
+
       ul li{
         margin-bottom: 24px;
         img{
@@ -201,6 +195,7 @@
     }
 
     .blog{
+      margin:96px 15px 0 15px;
       ul li{
         flex-direction: column;
         img{
@@ -238,7 +233,7 @@
       
     }
     .blog-page{
-      margin:0;
+      margin-bottom: 40px;
       ul{
         justify-content: center;
         li {
