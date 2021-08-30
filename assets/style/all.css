@@ -93,6 +93,8 @@ a {
           font-size: 20px;
           text-align: center;
           display: block; }
+          .header .container .header-nav li a:hover {
+            font-size: 25px; }
 
 @media (max-width: 768px) {
   .container {
